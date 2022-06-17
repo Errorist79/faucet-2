@@ -30,7 +30,7 @@ const sendSchema = Yup.object().shape({
 });
 
 const DENUMS_TO_TOKEN = {
-  uluna: 'Luna',
+  grain: 'GRAIN',
 };
 
 const REQUEST_LIMIT_SECS = 30;
@@ -156,14 +156,14 @@ class HomeComponent extends React.Component {
           <div className="recaptcha">
             <ReCAPTCHA
               ref={this.recaptchaRef}
-              sitekey="6Ld4w4cUAAAAAJceMYGpOTpjiJtMS_xvzOg643ix"
+              sitekey="6LeIxAcTAAAAAJcZVRqyHh71UMIEGNQ_MXjiZKhI"
               onChange={this.handleCaptcha}
             />
           </div>
           <Formik
             initialValues={{
               address: '',
-              denom: 'uluna',
+              denom: 'grain',
             }}
             validationSchema={sendSchema}
             onSubmit={this.handleSubmit}
@@ -180,7 +180,7 @@ class HomeComponent extends React.Component {
                     <div className="fieldError">{errors.address}</div>
                   ) : null}
                 </div>
-                <Field type="hidden" name="denom" value="uluna" />
+                <Field type="hidden" name="denom" value="grain" />
                 <div className="buttonContainer">
                   <button
                     disabled={!this.state.verified || this.state.sending}
