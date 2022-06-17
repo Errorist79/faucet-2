@@ -553,9 +553,6 @@ func main() {
 	pagerdutyConfig.token = os.Getenv(pagerdutyTokenVar)
 	pagerdutyConfig.user = os.Getenv(pagerdutyUserVar)
 	pagerdutyConfig.serviceID = os.Getenv(pagerdutyServiceIDVar)
-
-	if pagerdutyConfig.token == "" || pagerdutyConfig.user == "" || pagerdutyConfig.serviceID == "" {
-		panic("PAGERDUTY_TOKEN, PAGERDUTY_USER, and PAGERDUTY_SERVICE_ID variables are required")
 	}
 
 	db, err := leveldb.OpenFile("db/ipdb", nil)
