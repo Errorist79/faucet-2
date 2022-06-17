@@ -69,13 +69,13 @@ var pagerdutyConfig PagerdutyConfig
 
 const ( // new core hasn't these yet.
 	MicroUnit              = int64(1e6)
-	fullFundraiserPath     = "m/44'/330'/0'/0/0"
-	accountAddresPrefix    = "terra"
-	accountPubKeyPrefix    = "terrapub"
-	validatorAddressPrefix = "terravaloper"
-	validatorPubKeyPrefix  = "terravaloperpub"
-	consNodeAddressPrefix  = "terravalcons"
-	consNodePubKeyPrefix   = "terravalconspub"
+	fullFundraiserPath     = "m/44'/118'/0'/0/0"
+	accountAddresPrefix    = "paloma1"
+	accountPubKeyPrefix    = "palomapub"
+	validatorAddressPrefix = "palomavaloper"
+	validatorPubKeyPrefix  = "palomavaloperpub"
+	consNodeAddressPrefix  = "palomavalcons"
+	consNodePubKeyPrefix   = "palomavalconspub"
 )
 
 var amountTable = map[string]int64{
