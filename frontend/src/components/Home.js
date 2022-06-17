@@ -84,7 +84,7 @@ class HomeComponent extends React.Component {
         if (response.code) {
           toast.error(`Error: ${response.raw_log || `code: ${response.code}`}`);
         } else {
-          const url = `https://finder.terra.money/testnet/tx/${response.txhash}`;
+          const url = `https://paloma.explorers.guru/transaction/${response.txhash}`;
           toast.success(
             <div>
               <p>
